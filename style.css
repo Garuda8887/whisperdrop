@@ -166,3 +166,81 @@ footer {
 .hidden {
   display: none;
 }
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.file-upload {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-label {
+  background-color: var(--bg-color);
+  border: 1px dashed var(--border-color);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.file-label:hover {
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
+}
+
+.hidden-input {
+  display: none;
+}
+
+#file-name {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.dropdown {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown:focus {
+  border-color: var(--accent-color);
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.download-btn:hover {
+  border-color: var(--accent-hover);
+  background-color: var(--panel-bg);
+}
